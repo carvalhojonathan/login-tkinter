@@ -1,47 +1,68 @@
-# login-terminal
+# 🔐 Sistema de Login
 
 Sistema de login via terminal.
 
-## Pré-requisitos
+## 📋 Pré-requisitos
 
-- Python 3.x
+- Python 3.x 🐍
+- MySQL 🐬
 
-## Instalação
+## 💻 Instalação
 
 1. Clone o repositório:
-	```sh
-	git clone https://github.com/seu-usuario/login-terminal.git
-	```
+    ```sh
+    git clone https://github.com/seu-usuario/login-terminal.git
+    ```
 2. Navegue até o diretório do projeto:
-	```sh
-	cd login-terminal
-	```
+    ```sh
+    cd login-terminal
+    ```
+3. Crie um ambiente virtual:
+    ```sh
+    python -m venv venv
+    ```
+4. Ative o ambiente virtual:
+    - No Windows:
+        ```sh
+        venv\Scripts\activate
+        ```
+    - No Unix ou MacOS:
+        ```sh
+        source venv/bin/activate
+        ```
+5. Instale as dependências:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-## Uso
+## 🚀 Uso
 
 1. Execute o script principal:
-	```sh
-	python main.py
-	```
-2. Siga as instruções no terminal para fazer login.
+    ```sh
+    python view.py
+    ```
+2. Siga as instruções no terminal para fazer login ou cadastro.
 
-## Contribuição
+## ✨ Funcionalidades
 
-1. Faça um fork do projeto.
-2. Crie uma branch para sua feature:
-	```sh
-	git checkout -b minha-feature
-	```
-3. Faça commit das suas alterações:
-	```sh
-	git commit -m 'Minha nova feature'
-	```
-4. Envie para o repositório remoto:
-	```sh
-	git push origin minha-feature
-	```
-5. Abra um Pull Request.
+### 📝 Cadastro de Usuário
 
-## Licença
+- Verificação de dados do usuário:
+    - Nome deve ter entre 3 e 50 caracteres.
+    - Email deve ter entre 5 e 50 caracteres.
+    - Senha deve ter entre 6 e 100 caracteres.
+- Cadastro de novo usuário com hash da senha.
+- Verificação de email já cadastrado.
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+### 🔑 Login de Usuário
+
+- Verificação de email e senha.
+- Comparação de hash da senha para autenticação.
+- Mensagens de sucesso ou erro no login.
+
+## 📝 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [`LICENSE`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2FUsers%2Fjonat%2FDocuments%2FGitHub%2Flogin-terminal%2FLICENSE%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "d:\Users\jonat\Documents\GitHub\login-terminal\LICENSE") para mais detalhes.
+
+______________________________
+Feito por @carvalhojonathan

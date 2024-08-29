@@ -1,6 +1,6 @@
 # 🔐 Sistema de Login
 
-Sistema de login via terminal.
+Sistema de login com interface feita utilizando tkinter.
 
 ## 📋 Pré-requisitos
 
@@ -15,7 +15,7 @@ Sistema de login via terminal.
     ```
 2. Navegue até o diretório do projeto:
     ```sh
-    cd login-terminal
+    cd login-tkinter
     ```
 3. Crie um ambiente virtual:
     ```sh
